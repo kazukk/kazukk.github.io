@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Dejima - Connecting Japan's Flavors to the World</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-content {
+            background-color: rgba(0,0,0,0.6);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff4757;
+        }
+        .features {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .feature {
+            text-align: center;
+        }
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>ようこそ！</h1>
-    <p>これはGitHub Pagesでホスティングされたウェブサイトのサンプルページです。</p>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Dejima</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Japan's Hidden Flavors</h1>
+                <p>Dejima connects international visitors with authentic Japanese snacks and treats from local regions. Experience the true taste of Japan, delivered to your hotel.</p>
+                <a href="#" class="cta-button">Coming Soon</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature">
+                        <img src="/api/placeholder/80/80" alt="Local Specialties Icon">
+                        <h2>Local Specialties</h2>
+                        <p>Curated selection of authentic snacks from Japan's diverse regions</p>
+                    </div>
+                    <div class="feature">
+                        <img src="/api/placeholder/80/80" alt="Easy Ordering Icon">
+                        <h2>Easy Ordering</h2>
+                        <p>User-friendly platform with multi-language support for seamless purchasing</p>
+                    </div>
+                    <div class="feature">
+                        <img src="/api/placeholder/80/80" alt="Hotel Delivery Icon">
+                        <h2>Hotel Delivery</h2>
+                        <p>Convenient delivery to your hotel, making souvenir shopping effortless</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dejima. All rights reserved.</p>
+    </footer>
 </body>
 </html>
