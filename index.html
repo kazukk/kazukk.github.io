@@ -45,7 +45,6 @@
             line-height: 1.6;
             color: #333;
             background-color: #f4f4f4;
-            height: 100%;
         }
         .container {
             max-width: 1200px;
@@ -53,7 +52,7 @@
             padding: 20px;
         }
         header {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #fff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: fixed;
             width: 100%;
@@ -72,15 +71,10 @@
             color: #333;
             text-decoration: none;
         }
-        .parallax {
-            background-image: url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f');
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
         .hero {
+            background-image: url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f');
+            background-size: cover;
+            background-position: center;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -148,15 +142,13 @@
     </header>
 
     <main>
-        <div class="parallax">
-            <section class="hero">
-                <div class="hero-content">
-                    <h1>Discover Japan's Hidden Flavors</h1>
-                    <p>Dejima connects international visitors with authentic Japanese sweets and treats from local regions. Experience the true taste of Japan, delivered to your hotel.</p>
-                    <a href="#" class="cta-button">Coming Soon</a>
-                </div>
-            </section>
-        </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Japan's Hidden Flavors</h1>
+                <p>Dejima connects international visitors with authentic Japanese sweets and treats from local regions. Experience the true taste of Japan, delivered to your hotel.</p>
+                <a href="#" class="cta-button">Coming Soon</a>
+            </div>
+        </section>
 
         <section class="features">
             <div class="container">
