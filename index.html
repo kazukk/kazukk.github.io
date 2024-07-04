@@ -12,14 +12,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO and social sharing metadata remains unchanged -->
-    
+    <!-- Basic SEO -->
+    <title>Dejima: Authentic Japanese Sweets Delivered to Your Hotel | Coming Soon</title>
+    <meta name="description" content="Discover authentic Japanese sweets and treats from local regions. Dejima connects international visitors with the true taste of Japan, delivered to your hotel.">
+    <meta name="keywords" content="Japanese sweets, wagashi, dorayaki, hotel delivery, Japan souvenirs, authentic Japanese treats">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dejima.com/">
+    <meta property="og:title" content="Dejima: Japanese Sweets Delivered to Your Hotel">
+    <meta property="og:description" content="Experience authentic Japanese sweets from local regions, delivered to your hotel. Discover the true taste of Japan with Dejima.">
+    <meta property="og:image" content="https://www.dejima.com/path-to-your-og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.dejima.com/">
+    <meta property="twitter:title" content="Dejima: Japanese Sweets Delivered to Your Hotel">
+    <meta property="twitter:description" content="Experience authentic Japanese sweets from local regions, delivered to your hotel. Discover the true taste of Japan with Dejima.">
+    <meta property="twitter:image" content="https://www.dejima.com/path-to-your-twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.dejima.com/">
+
+    <!-- Language -->
+    <meta name="language" content="English">
+
+    <!-- Additional tags for better indexing -->
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Dejima">
+
     <style>
         /* Reset and base styles */
         *, *::before, *::after {
             box-sizing: border-box;
         }
-        
         body, html {
             margin: 0;
             padding: 0;
@@ -28,36 +58,17 @@
             color: #333;
             background-color: #f4f4f4;
         }
-
         img {
             max-width: 100%;
             height: auto;
         }
-
-        /* Typography */
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Layout */
+        /* Container */
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem;
+            padding: 0 20px;
         }
-
         /* Header */
         header {
             background-color: #fff;
@@ -67,21 +78,19 @@
             top: 0;
             z-index: 1000;
         }
-
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px 0;
         }
-
         .logo {
-            font-size: 1.5rem;
+            font-size: 24px;
             font-weight: bold;
             color: #333;
             text-decoration: none;
         }
-
-        /* Hero section */
+        /* Hero Section */
         .hero {
             background-image: url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f');
             background-size: cover;
@@ -92,95 +101,82 @@
             justify-content: center;
             text-align: center;
             color: #fff;
-            padding: 2rem 1rem;
+            padding: 20px;
         }
-
         .hero-content {
             background-color: rgba(0,0,0,0.6);
-            padding: 2rem;
+            padding: 40px;
             border-radius: 8px;
-            max-width: 90%;
+            max-width: 600px;
+            width: 100%;
         }
-
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
         .cta-button {
             display: inline-block;
             background-color: #ff6b6b;
             color: #fff;
-            padding: 0.75rem 1.5rem;
+            padding: 12px 24px;
             border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
-
         .cta-button:hover {
             background-color: #ff4757;
         }
-
-        /* Features section */
+        /* Features Section */
         .features {
-            padding: 3rem 0;
+            padding: 80px 0;
             background-color: #fff;
         }
-
         .feature-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
         }
-
         .feature {
             text-align: center;
         }
-
         .feature img {
             width: 80px;
             height: 80px;
-            margin-bottom: 1rem;
+            margin-bottom: 20px;
         }
-
         /* Footer */
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 20px;
         }
-
-        /* Media Queries */
-        @media screen and (min-width: 768px) {
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
-
-            h2 {
+            .hero-content {
+                padding: 30px;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
                 font-size: 1.75rem;
             }
-
             p {
-                font-size: 1.125rem;
+                font-size: 0.9rem;
             }
-
             .hero-content {
-                max-width: 70%;
-            }
-
-            .feature-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media screen and (min-width: 1024px) {
-            h1 {
-                font-size: 3rem;
-            }
-
-            .hero-content {
-                max-width: 60%;
-            }
-
-            .feature-grid {
-                grid-template-columns: repeat(3, 1fr);
+                padding: 20px;
             }
         }
     </style>
@@ -210,17 +206,17 @@
             <div class="container">
                 <div class="feature-grid">
                     <div class="feature">
-                        <img src="/api/placeholder/80/80" alt="Local Specialties Icon">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dejima-b77e6.appspot.com/o/local%20speciality.png?alt=media&token=54923c7f-5328-4fd4-a85e-9f9a6c5e83ea" alt="Local Specialties Icon">
                         <h2>Local Specialties</h2>
                         <p>Curated selection of authentic sweets from Japan's diverse regions</p>
                     </div>
                     <div class="feature">
-                        <img src="/api/placeholder/80/80" alt="Easy Ordering Icon">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dejima-b77e6.appspot.com/o/mobile%20order.png?alt=media&token=a182294f-bc3f-4478-a2f2-b87214b2e1a4" alt="Easy Ordering Icon">
                         <h2>Easy Ordering</h2>
                         <p>User-friendly platform with multi-language support for seamless purchasing</p>
                     </div>
                     <div class="feature">
-                        <img src="/api/placeholder/80/80" alt="Hotel Delivery Icon">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dejima-b77e6.appspot.com/o/hotel%20delivery.png?alt=media&token=fa4349ee-ad9a-4551-8f01-5a15204706cb" alt="Hotel Delivery Icon">
                         <h2>Hotel Delivery</h2>
                         <p>Convenient delivery to your hotel, making souvenir shopping effortless</p>
                     </div>
