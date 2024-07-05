@@ -1,0 +1,26 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # メインブランチにプッシュされた時に実行
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest  # Ubuntu環境で実行
+    steps:
+    - uses: actions/checkout@v2  # リポジトリをチェックアウト
+
+    # Rubyの依存関係をキャッシュ
+    - uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
+    # Jekyllサイトをビルドしてデプロイ
+    - uses: helaili/jekyll-action@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target_branch: 'gh-pages'  # デプロイ先のブランチ
