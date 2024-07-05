@@ -12,3 +12,15 @@ plugins:
 
 # ブログ固有の設定
 permalink: /:year/:month/:day/:title/
+
+# 既存の設定
+
+# ナビゲーション設定
+header_pages:
+  - about.md
+  - products.md
+  - blog.md
+  - contact.md
+
+# メインサイトのURL
+main_site_url: "https://dejima.store"
