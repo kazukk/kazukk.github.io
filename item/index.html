@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Yokan - Dejima</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .product-gallery {
+            width: 100%;
+        }
+        .main-image svg {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+        }
+        .thumbnails {
+            display: flex;
+            justify-content: start;
+            margin-top: 20px;
+        }
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .thumbnail svg {
+            width: 100%;
+            height: 100%;
+        }
+        .product-info {
+            width: 100%;
+            padding: 40px 0;
+        }
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        .price {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .add-to-cart {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .add-to-cart:hover {
+            background-color: #555;
+        }
+        .product-description {
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .product-details {
+            margin-top: 40px;
+        }
+        .product-details h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        .product-story {
+            margin-top: 60px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .reviews {
+            margin-top: 60px;
+        }
+        .review {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        footer {
+            margin-top: 60px;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #777;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .product-gallery {
+                width: 60%;
+                padding-right: 40px;
+            }
+            .product-info {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .nav-links {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+                font-size: 24px;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Dejima</a>
+            <button class="menu-toggle">☰</button>
+            <div class="nav-links">
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="product-section">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#f9f9f9"/>
+                        <rect x="50" y="100" width="300" height="100" fill="#8B4513"/>
+                        <rect x="60" y="110" width="280" height="80" fill="#D2691E"/>
+                        <line x1="60" y1="150" x2="340" y2="150" stroke="#8B4513" stroke-width="2"/>
+                        <text x="200" y="280" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Traditional Yokan</text>
+                    </svg>
+                </div>
+                <div class="thumbnails">
+                    <div class="thumbnail">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="80" height="80" fill="#f9f9f9"/>
+                            <rect x="10" y="20" width="60" height="40" fill="#8B4513"/>
+                            <rect x="12" y="22" width="56" height="36" fill="#D2691E"/>
+                        </svg>
+                    </div>
+                    <div class="thumbnail">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="80" height="80" fill="#f9f9f9"/>
+                            <rect x="10" y="20" width="60" height="40" fill="#8B4513"/>
+                            <rect x="12" y="22" width="56" height="18" fill="#D2691E"/>
+                            <line x1="12" y1="40" x2="68" y2="40" stroke="#8B4513" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="thumbnail">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="80" height="80" fill="#f9f9f9"/>
+                            <rect x="30" y="10" width="20" height="60" fill="#8B4513"/>
+                            <rect x="32" y="12" width="16" height="56" fill="#D2691E"/>
+                        </svg>
+                    </div>
+                    <div class="thumbnail">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="80" height="80" fill="#f9f9f9"/>
+                            <circle cx="40" cy="40" r="30" fill="#8B4513"/>
+                            <text x="40" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff">動画</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Traditional Yokan</h1>
+                <p class="price">¥1,080</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="product-description">
+                    <p>A classic Japanese sweet with a rich history, our traditional yokan offers a dense, silky smooth texture with a deep red bean flavor. Handcrafted by master confectioners using time-honored techniques, this yokan represents the pinnacle of Japanese confectionery art.</p>
+                </div>
+                <div class="product-details">
+                    <h3>Details</h3>
+                    <p>Net Weight: 150g (5.3oz)<br>
+                    Dimensions: 16cm × 3.5cm × 3cm</p>
+                    <h3>Ingredients</h3>
+                    <p>Red bean paste (azuki beans, sugar), agar, sugar</p>
+                    <h3>Storage</h3>
+                    <p>Store in a cool, dry place away from direct sunlight. Best consumed within 1 month of purchase. Once opened, wrap tightly and refrigerate for up to 5 days.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-story">
+            <h2>The Art of Yokan</h2>
+            <p>Yokan has been a beloved Japanese confection for centuries, evolving from a savory dish in China to the sweet delicacy we know today. Our yokan is crafted in Kyoto by the Mochizuki family, who have been perfecting their art for over 150 years.</p>
+            <p>The process begins with carefully selected azuki beans, prized for their superior flavor and texture. These beans are slowly cooked and blended with sugar to create a smooth paste. Agar, a natural gelatin derived from seaweed, is then added to give the yokan its distinctive firm yet silky texture.</p>
+            <p>What sets our yokan apart is the balance of sweetness and the pure flavor of azuki beans. It's an exemplary representation of the Japanese confectionery principle of letting natural flavors shine through minimal intervention.</p>
+            <p>Perfect as a gift or as an accompaniment to green tea, our yokan offers a true taste of Japanese culinary tradition.</p>
+        </div>
+
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"The texture of this yokan is incredibly smooth, and the flavor is deep and satisfying without being overly sweet. It's become my favorite treat with afternoon tea." - Emily R., USA</p>
+            </div>
+            <div class="review">
+                <p>"I bought this yokan as a souvenir for my family. They were impressed by its elegant simplicity and refined taste. It's a wonderful way to share a piece of Japanese culture." - David L., Australia</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dejima. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
