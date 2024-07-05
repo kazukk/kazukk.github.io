@@ -1,0 +1,14 @@
+title: Dejima Store Blog
+description: Discover unique Japanese souvenirs and cultural insights
+baseurl: "/blog"
+url: "https://dejima.store"
+
+# ビルド設定
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# ブログ固有の設定
+permalink: /:year/:month/:day/:title/
