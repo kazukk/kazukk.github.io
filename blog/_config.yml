@@ -1,26 +1,16 @@
 title: Dejima Store Blog
 description: Discover unique Japanese souvenirs and cultural insights
-baseurl: "/blog"
-url: "https://dejima.store"
+author: Dejima Store
+email: your-email@dejima.store
+baseurl: "/blog" # ブログをサブディレクトリで運用する場合
+url: "https://yourusername.github.io"
 
 # ビルド設定
 markdown: kramdown
-theme: minima
+theme: minima # または選択したテーマ名
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# ブログ固有の設定
+# ブログ設定
 permalink: /:year/:month/:day/:title/
-
-# 既存の設定
-
-# ナビゲーション設定
-header_pages:
-  - about.md
-  - products.md
-  - blog.md
-  - contact.md
-
-# メインサイトのURL
-main_site_url: "https://dejima.store"
