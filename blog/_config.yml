@@ -15,3 +15,5 @@ plugins:
 
 # ブログ設定
 permalink: /blog/:year/:month/:day/:title/
+
+paginate: 5
