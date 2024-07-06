@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wagashi: The Art and History of Japanese Confectionery | Dejima Store"
-date: 2024-07-15 10:00:00 +0900
+date: 2024-07-05 10:00:00 +0900
 last_modified_at: 2024-07-15 10:00:00 +0900
 categories: [culture, food]
 tags: [wagashi, japanese-sweets, japanese-confectionery, traditional-japanese-desserts]
