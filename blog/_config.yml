@@ -3,7 +3,7 @@ description: Discover unique Japanese souvenirs and cultural insights
 author: Dejima Store
 email: your-email@dejima.store
 baseurl: "/blog" # ブログをサブディレクトリで運用する場合
-url: "https://yourusername.github.io"
+url: "https://dejima.store"
 
 # ビルド設定
 markdown: kramdown
