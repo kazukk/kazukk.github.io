@@ -19,28 +19,17 @@ jobs:
         ruby-version: '3.2' # または最新の安定版
         bundler-cache: true # これによりbundle installも自動的に実行されます
 
-    - name: Update RubyGems and Bundler
-      run: |
-        gem update --system
-        gem install bundler
-        gem --version
-        bundle --version
-
-    - name: Cache dependencies
-      uses: actions/cache@v4
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-
     - name: Install dependencies
       run: |
+        cd blog
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
+      shell: bash
 
     - name: Build Jekyll site
-      run: JEKYLL_ENV=production bundle exec jekyll build
+      run: |
+        cd blog
+        JEKYLL_ENV=production bundle exec jekyll build
       env:
         JEKYLL_PAT: ${{ secrets.GITHUB_TOKEN }}
 
@@ -49,7 +38,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+        publish_dir: ./blog/_site
         publish_branch: gh-pages
         cname: dejima.store # あなたのカスタムドメインがある場合
 
@@ -57,4 +46,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: site
-        path: ./_site
+        path: ./blog/_site
