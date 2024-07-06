@@ -7,7 +7,8 @@ url: "https://dejima.store"
 
 # ビルド設定
 markdown: kramdown
-theme: minima # または選択したテーマ名
+#theme: minima # または選択したテーマ名
+theme: jekyll-theme-clean-blog
 
 plugins:
   - jekyll-feed
