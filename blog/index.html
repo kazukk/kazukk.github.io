@@ -103,7 +103,24 @@
         .post-meta {
             font-size: 14px;
             color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-bottom: 20px;
+        }
+
+        .post-tag {
+            font-size: 14px;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .post-tag:hover {
+            color: var(--accent-color);
         }
 
         .post-image {
@@ -180,68 +197,30 @@
             border-radius: 5px;
         }
 
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .archive-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .tag {
-            background-color: var(--background-color);
-            color: var(--secondary-color);
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 14px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+        .archive-list li {
+            margin-bottom: 10px;
         }
 
-        .tag:hover {
-            background-color: var(--secondary-color);
-            color: #fff;
-        }
-
-        .archives-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 10px;
-        }
-
-        .archive-card {
-            background-color: var(--background-color);
-            border-radius: 5px;
-            padding: 10px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .archive-card:hover {
-            background-color: var(--secondary-color);
-        }
-
-        .archive-card a {
-            text-decoration: none;
-            color: var(--primary-color);
+        .archive-list .year-header {
             font-weight: bold;
-            display: block;
+            color: var(--primary-color);
+            margin-top: 20px;
         }
 
-        .archive-card:hover a {
-            color: #fff;
-        }
-
-        .archive-month {
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-
-        .archive-year {
-            font-size: 14px;
+        .archive-list a {
             color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .archive-card:hover .archive-year {
-            color: #f0f0f0;
+        .archive-list a:hover {
+            color: var(--accent-color);
         }
 
         footer {
@@ -288,10 +267,6 @@
             .post-content {
                 font-size: 16px;
             }
-
-            .archives-grid {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            }
         }
     </style>
 </head>
@@ -319,28 +294,33 @@
         <section class="content">
             <article class="post">
                 <h1 class="post-title">The Ephemeral Beauty of Wagashi: Japan's Edible Art</h1>
-                <div class="post-meta">By Akira Tanaka | July 1, 2024 | Wagashi, Japanese Culture</div>
-                <img src="https://as2.ftcdn.net/v2/jpg/05/64/34/17/1000_F_564341721_2WLUwsIJ75fAG9Sq8TRsalm9j4cJZBNM.jpg" alt="An assortment of colorful wagashi on a traditional Japanese plate" class="post-image" />
+                <div class="post-meta">By Akira Tanaka | July 1, 2024</div>
+                <div class="post-tags">
+                    <a href="#" class="post-tag">#Wagashi</a>
+                    <a href="#" class="post-tag">#JapaneseCulture</a>
+                    <a href="#" class="post-tag">#TraditionalSweets</a>
+                </div>
+                <img src="/api/placeholder/1000/600?text=Colorful+Wagashi+Assortment" alt="An assortment of colorful wagashi on a traditional Japanese plate" class="post-image" />
                 <div class="post-content">
                     <p>In the world of Japanese confectionery, few creations embody the principles of wabi-sabi — the appreciation of imperfection and impermanence — quite like wagashi. These traditional sweets, often served alongside matcha in tea ceremonies, are more than mere confections; they are edible manifestations of Japan's deep-rooted aesthetic philosophy.</p>
                     
                     <p>Wagashi, which literally translates to "Japanese confections," have a history spanning over a thousand years. Their evolution is intimately tied to the development of the Japanese tea ceremony, a ritual that places equal emphasis on the visual and gustatory experiences of its participants.</p>
                     
-                    <img src="https://as1.ftcdn.net/v2/jpg/04/40/51/02/1000_F_440510265_n5wpBKUCBhSPhfbSqj5ePBTgpOofIOra.jpg" alt="A traditional Japanese tea ceremony setting with wagashi" />
+                    <img src="/api/placeholder/800/500?text=Japanese+Tea+Ceremony" alt="A traditional Japanese tea ceremony setting with wagashi" />
                     <p class="image-caption">A traditional Japanese tea ceremony setting with wagashi</p>
                     
                     <p>What sets wagashi apart from other confections is their meticulous craftsmanship and their profound connection to nature and the changing seasons. Each piece is a miniature work of art, often reflecting the flora, fauna, or landscapes associated with a particular time of year. A spring wagashi might take the form of a delicate cherry blossom, while an autumn sweet could resemble a vibrant maple leaf.</p>
                     
                     <p>The ingredients used in wagashi are deceptively simple, primarily consisting of plant-based components such as mochi (pounded rice), anko (sweet red bean paste), and kanten (agar). Yet, in the hands of skilled artisans, these humble ingredients are transformed into exquisite creations that engage all the senses.</p>
                     
-                    <img src="https://as2.ftcdn.net/v2/jpg/05/66/99/57/1000_F_566995703_TVS7Bq2Q31W4EGmJKjjUODLGxRnFRLzR.jpg" alt="Various types of wagashi showcasing different shapes and colors" />
+                    <img src="/api/placeholder/800/500?text=Variety+of+Wagashi" alt="Various types of wagashi showcasing different shapes and colors" />
                     <p class="image-caption">Various types of wagashi showcasing different shapes and colors</p>
                     
                     <p>The ephemeral nature of wagashi is perhaps their most poignant attribute. Unlike Western confections designed for longevity, wagashi are meant to be enjoyed in the moment. Their delicate structures and subtle flavors are a reminder of life's transience, encouraging the consumer to be fully present in the act of appreciation.</p>
                     
                     <p>As Japan continues to navigate the balance between tradition and modernity, wagashi remain a steadfast emblem of the nation's cultural heritage. They serve not only as a sweet treat but as a meditative experience, a moment of reflection amidst the chaos of contemporary life.</p>
                     
-                    <img src="https://as1.ftcdn.net/v2/jpg/05/18/74/54/1000_F_518745447_3Pq8XC9y9LMd4t8jIgQbHofXVrmKoMyQ.jpg" alt="A modern interpretation of wagashi with traditional elements" />
+                    <img src="/api/placeholder/800/500?text=Modern+Wagashi" alt="A modern interpretation of wagashi with traditional elements" />
                     <p class="image-caption">A modern interpretation of wagashi with traditional elements</p>
                     
                     <p>For those outside of Japan, encountering wagashi for the first time can be a revelation. These aren't just desserts; they're an introduction to a different way of perceiving food, art, and the passage of time. In every bite of wagashi, one tastes not just sugar and bean paste, but centuries of tradition, a reverence for nature, and the bittersweet beauty of impermanence.</p>
@@ -360,42 +340,36 @@
                 </form>
             </div>
             <div class="widget">
-                <h3 class="widget-title">Popular Tags</h3>
-                <div class="tags">
-                    <a href="#" class="tag">Wagashi</a>
-                    <a href="#" class="tag">Tea Ceremony</a>
-                    <a href="#" class="tag">Seasonal Sweets</a>
-                    <a href="#" class="tag">Artisanal Crafts</a>
-                    <a href="#" class="tag">Japanese Culture</a>
-                </div>
-            </div>
-            <div class="widget">
                 <h3 class="widget-title">Archives</h3>
-                <div class="archives-grid">
-                    <div class="archive-card">
-                        <a href="#">
-                            <div class="archive-month">July</div>
-                            <div class="archive-year">2024</div>
-                        </a>
-                    </div>
-                    <div class="archive-card">
-                        <a href="#">
-                            <div class="archive-month">June</div>
-                            <div class="archive-year">2024</div>
-                        </a>
-                    </div>
-                    <div class="archive-card">
-                        <a href="#">
-                            <div class="archive-month">May</div>
-                            <div class="archive-year">2024</div>
-                        </a>
-                    </div>
-                    <div class="archive-card">
-                        <a href="#">
-                            <div class="archive-month">April</div>
-                            <div class="archive-year">2024</div>
-                        </a>
-                    </div>
-                    <div class="archive-card">
-                        <a href="#">
-                            <div
+                <ul class="archive-list">
+                    <li class="year-header">2024</li>
+                    <li><a href="#">June 2024</a></li>
+                    <li><a href="#">May 2024</a></li>
+                    <li><a href="#">April 2024</a></li>
+                    <li class="year-header">2023</li>
+                    <li><a href="#">December 2023</a></li>
+                    <li><a href="#">November 2023</a></li>
+                    <li><a href="#">October 2023</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dejima. Exploring the Art of Wagashi.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
