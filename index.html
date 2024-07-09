@@ -1,236 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W6LGVPBG');</script>
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-    <!-- Basic SEO -->
-    <title>Dejima: Authentic Japanese Sweets (Wagashi) Delivered to Your Hotel | Coming Soon</title>
-    <meta name="description" content="Discover authentic Japanese sweets and treats (Wagashi) from local regions. Dejima connects international visitors with the true taste of Japan, delivered to your hotel.">
-    <meta name="keywords" content="Japanese sweets, wagashi, dorayaki, hotel delivery, Japan souvenirs, authentic Japanese treats">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.dejima.com/">
-    <meta property="og:title" content="Dejima: Japanese Sweets Delivered to Your Hotel">
-    <meta property="og:description" content="Experience authentic Japanese sweets from local regions, delivered to your hotel. Discover the true taste of Japan with Dejima.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.dejima.com/">
-    <meta property="twitter:title" content="Dejima: Japanese Sweets Delivered to Your Hotel">
-    <meta property="twitter:description" content="Experience authentic Japanese sweets from local regions, delivered to your hotel. Discover the true taste of Japan with Dejima.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.dejima.com/">
-
-    <!-- Language -->
-    <meta name="language" content="English">
-
-    <!-- Additional tags for better indexing -->
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="author" content="Dejima">
-
+    <title>The Timeless Artistry of Wagashi: Japan's Traditional Sweets - Dejima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Reset and base styles */
-        *, *::before, *::after {
-            box-sizing: border-box;
+        :root {
+            --primary-color: #4a4a4a;
+            --secondary-color: #8e7d6b;
+            --background-color: #f7f3ee;
+            --text-color: #333;
+            --accent-color: #d35400;
         }
-        body, html {
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+            color: var(--text-color);
+            background-color: var(--background-color);
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        /* Container */
+
         .container {
-            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        /* Header */
+
         header {
             background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
+
         .logo {
+            font-family: 'Noto Sans JP', sans-serif;
             font-size: 24px;
-            font-weight: bold;
-            color: #333;
+            color: var(--primary-color);
             text-decoration: none;
+            font-weight: bold;
         }
-        /* Hero Section */
-        .hero {
-            background-image: url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
+
+        .nav-links {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            padding: 20px;
+            gap: 20px;
         }
-        .hero-content {
-            background-color: rgba(0,0,0,0.6);
-            padding: 40px;
-            border-radius: 8px;
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1rem;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #ff6b6b;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 4px;
+
+        .nav-links a {
+            color: var(--primary-color);
             text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+            font-size: 16px;
+            transition: color 0.3s ease;
         }
-        .cta-button:hover {
-            background-color: #ff4757;
+
+        .nav-links a:hover {
+            color: var(--accent-color);
         }
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-            background-color: #fff;
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
         }
-        .feature-grid {
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 2px 0;
+            transition: 0.4s;
+        }
+
+        main {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 3fr 1fr;
             gap: 40px;
+            margin-top: 40px;
         }
-        .feature {
-            text-align: center;
+
+        .post {
+            background-color: #fff;
+            margin-bottom: 40px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 5px;
         }
-        .feature img {
-            width: 80px;
-            height: 80px;
+
+        .post-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin-bottom: 20px;
         }
-        /* Footer */
+
+        .post-tag {
+            font-size: 14px;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .post-tag:hover {
+            color: var(--accent-color);
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .post-content {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .image-caption {
+            font-size: 14px;
+            color: var(--secondary-color);
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .previous-post, .next-post {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .previous-post:hover, .next-post:hover {
+            background-color: #e67e22;
+        }
+
+        .post-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 5px;
+        }
+
+        .widget {
+            margin-bottom: 40px;
+        }
+
+        .widget-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--background-color);
+        }
+
+        .search-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--background-color);
+            border-radius: 5px;
+        }
+
+        .archive-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .archive-list li {
+            margin-bottom: 10px;
+        }
+
+        .archive-list .year-header {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+
+        .archive-list a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .archive-list a:hover {
+            color: var(--accent-color);
+        }
+
         footer {
-            background-color: #333;
+            background-color: var(--primary-color);
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
+            margin-top: 40px;
         }
-        /* Responsive adjustments */
+
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            body {
+                font-size: 14px;
             }
-            .hero-content {
-                padding: 30px;
-            }
-            .feature-grid {
+
+            main {
                 grid-template-columns: 1fr;
             }
-        }
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.75rem;
+
+            .hamburger {
+                display: flex;
             }
-            p {
-                font-size: 0.9rem;
-            }
-            .hero-content {
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
                 padding: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .post {
+                padding: 20px;
+            }
+
+            .post-title {
+                font-size: 24px;
+            }
+
+            .post-content {
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6LGVPBG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <header>
-        <nav class="container">
-            <a href="#" class="logo">Dejima</a>
-        </nav>
+        <div class="container">
+            <nav>
+                <a href="https://dejima.store" class="logo">Dejima</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shopping</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Discover Japan's Hidden Flavors</h1>
-                <p>Dejima connects international visitors with authentic Japanese sweets (Wagashi) and treats from local regions. Experience the true taste of Japan, delivered to your hotel.</p>
-                <a href="#" class="cta-button">Coming Soon</a>
+    <main class="container">
+        <section class="content">
+            <article class="post">
+                <h1 class="post-title">The Timeless Artistry of Wagashi: Japan's Traditional Sweets</h1>
+                <div class="post-meta">By Akira Tanaka | July 1, 2024</div>
+                <div class="post-tags">
+                    <a href="#" class="post-tag">#Wagashi</a>
+                    <a href="#" class="post-tag">#JapaneseCulture</a>
+                    <a href="#" class="post-tag">#TraditionalSweets</a>
+                </div>
+                <img src="https://dejima.store/blog/240_F_139233245_p6EvVIaIZLnshtT9Stt3pBjsluYyDAAt.jpg" alt="Colorful wagashi on a traditional Japanese plate" class="post-image" />
+                <div class="post-content">
+                    <p>Wagashi, the traditional confections of Japan, are more than just sweets; they are edible art forms that embody centuries of cultural heritage. With a history stretching back to the Jomon period (14,000-300 BCE), wagashi have evolved alongside Japanese society, reflecting changes in tastes, techniques, and cultural influences.</p>
+                    
+                    <p>The origins of wagashi can be traced to simple sweets made from nuts and fruits. As Japan's cultural exchange with China grew during the Tang Dynasty (618-907 CE), new ingredients and preparation methods were introduced, enriching the variety of Japanese confections. The tea ceremony's development in the 15th and 16th centuries further elevated wagashi's cultural significance, as these sweets became an integral part of the ritual.</p>
+                    
+                    <img src="https://dejima.store/blog/240_F_311147371_pbK7SAy4irJQky870yMub6udlA1Hwxwb.jpg" alt="A traditional Japanese tea ceremony setting with wagashi" />
+                    <p class="image-caption">Wagashi served during a traditional Japanese tea ceremony</p>
+                    
+                    <p>Today, wagashi come in a myriad of forms, each showcasing the artisan's skill and attention to detail. Some common types include:</p>
+                    
+                    <ul>
+                        <li><strong>Namagashi:</strong> Soft, fresh confections often shaped to represent seasonal motifs.</li>
+                        <li><strong>Higashi:</strong> Dry confections made from sugar and rice flour, pressed into intricate shapes.</li>
+                        <li><strong>Mochi:</strong> Soft, pounded rice cakes, often filled with sweet bean paste.</li>
+                        <li><strong>Yokan:</strong> A thick, jellied dessert made from red bean paste, agar, and sugar.</li>
+                    </ul>
+                    
+                    <p>What sets wagashi apart is not just their taste, but their deep connection to Japanese aesthetics and philosophy. Each piece is carefully crafted to appeal to all senses, reflecting the changing seasons and natural beauty of Japan. The concept of 'mono no aware,' or the pathos of things, is often embodied in wagashi, reminding us of the transient nature of beauty.</p>
+                    
+                    <img src="https://dejima.store/blog/240_F_38371885_Lx7m9F0ZczYnmHpJWX8EYEzMduAfRyId.jpg" alt="Various types of wagashi showcasing different shapes and colors" />
+                    <p class="image-caption">A variety of wagashi showcasing different shapes, colors, and seasonal themes</p>
+                    
+                    <p>The ingredients used in wagashi are primarily plant-based, with an emphasis on natural, seasonal flavors. Common components include:</p>
+                    
+                    <ul>
+                        <li>Mochi (pounded rice)</li>
+                        <li>Anko (sweet red bean paste)</li>
+                        <li>Kanten (agar derived from seaweed)</li>
+                        <li>Various nuts, fruits, and flower essences</li>
+                    </ul>
+                    
+                    <p>As Japan continues to navigate the balance between tradition and modernity, wagashi remain a steadfast emblem of the nation's cultural heritage. They serve not only as a sweet treat but as a meditative experience, a moment of reflection amidst the chaos of contemporary life.</p>
+                    
+                    <img src="https://dejima.store/blog/240_F_402384737_qtVDdTmX87HZWOEnJxx7Ie49a0E7Q4G7.jpg" alt="A modern interpretation of wagashi with traditional elements" />
+                    <p class="image-caption">A modern interpretation of wagashi, blending traditional techniques with contemporary design</p>
+                    
+                    <p>For those outside of Japan, encountering wagashi for the first time can be a revelation. These aren't just desserts; they're an introduction to a different way of perceiving food, art, and the passage of time. In every bite of wagashi, one tastes not just sugar and bean paste, but centuries of tradition, a reverence for nature, and the bittersweet beauty of impermanence.</p>
+                    
+                    <p>As we celebrate these exquisite confections, we also honor the skilled artisans who continue to preserve and innovate this sweet aspect of Japanese culture. Wagashi remind us that even in our fast-paced world, there is still room for moments of quiet appreciation and the joy of savoring life's fleeting pleasures.</p>
+                </div>
+            </article>
+            <div class="post-navigation">
+                <a href="#" class="previous-post">Previous Post</a>
+                <a href="#" class="next-post">Next Post</a>
             </div>
         </section>
 
-        <section class="features">
-            <div class="container">
-                <div class="feature-grid">
-                    <div class="feature">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dejima-b77e6.appspot.com/o/local%20speciality.png?alt=media&token=54923c7f-5328-4fd4-a85e-9f9a6c5e83ea" alt="Local Specialties Icon">
-                        <h2>Local Specialties</h2>
-                        <p>Curated selection of authentic sweets from Japan's diverse regions</p>
-                    </div>
-                    <div class="feature">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dejima-b77e6.appspot.com/o/mobile%20order.png?alt=media&token=a182294f-bc3f-4478-a2f2-b87214b2e1a4" alt="Easy Ordering Icon">
-                        <h2>Easy Ordering</h2>
-                        <p>User-friendly platform with multi-language support for seamless purchasing</p>
-                    </div>
-                    <div class="feature">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dejima-b77e6.appspot.com/o/hotel%20delivery.png?alt=media&token=fa4349ee-ad9a-4551-8f01-5a15204706cb" alt="Hotel Delivery Icon">
-                        <h2>Hotel Delivery</h2>
-                        <p>Convenient delivery to your hotel, making souvenir shopping effortless</p>
-                    </div>
-                </div>
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Search</h3>
+                <form class="search-form">
+                    <input type="text" placeholder="Search...">
+                </form>
             </div>
-        </section>
+            <div class="widget">
+                <h3 class="widget-title">Archives</h3>
+                <ul class="archive-list">
+                    <li class="year-header">2024</li>
+                    <li><a href="#">June 2024</a></li>
+                    <li><a href="#">May 2024</a></li>
+                    <li><a href="#">April 2024</a></li>
+                    <li class="year-header">2023</li>
+                    <li><a href="#">December 2023</a></li>
+                    <li><a href="#">November 2023</a></li>
+                    <li><a href="#">October 2023</a></li>
+                </ul>
+            </div>
+        </aside>
     </main>
 
     <footer>
-        <p>&copy; 2024 Dejima. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Dejima. Exploring the Art of Wagashi.</p>
+        </div>
     </footer>
-</body>
-</html>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
