@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ephemeral Beauty of Wagashi: Japan's Edible Art - Dejima</title>
+    <style>
+        :root {
+            --primary-color: #4a4a4a;
+            --secondary-color: #8e7d6b;
+            --background-color: #f7f3ee;
+            --text-color: #333;
+            --accent-color: #d35400;
+        }
+        
+        body {
+            font-family: 'Libre Baskerville', serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 24px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 40px;
+            margin-top: unused-wrap: 40px;
+        }
+
+        .post {
+            background-color: #fff;
+            margin-bottom: 40px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 5px;
+        }
+
+        .post-title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .post-content {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .previous-post, .next-post {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .previous-post:hover, .next-post:hover {
+            background-color: #e67e22;
+        }
+
+        .post-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 5px;
+        }
+
+        .widget {
+            margin-bottom: 40px;
+        }
+
+        .widget-title {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--background-color);
+        }
+
+        .search-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--background-color);
+            border-radius: 5px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: var(--background-color);
+            color: var(--secondary-color);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tag:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        .archives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .archive-card {
+            background-color: var(--background-color);
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .archive-card:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .archive-card a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            display: block;
+        }
+
+        .archive-card:hover a {
+            color: #fff;
+        }
+
+        .archive-month {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .archive-year {
+            font-size: 14px;
+            color: var(--secondary-color);
+        }
+
+        .archive-card:hover .archive-year {
+            color: #f0f0f0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 20px;
+                flex-direction: column;
+            }
+
+            .post {
+                padding: 20px;
+            }
+
+            .post-title {
+                font-size: 24px;
+            }
+
+            .post-content {
+                font-size: 16px;
+            }
+
+            .archives-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="https://dejima.store" class="logo">Dejima</a>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shopping</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content">
+            <article class="post">
+                <h1 class="post-title">The Ephemeral Beauty of Wagashi: Japan's Edible Art</h1>
+                <div class="post-meta">By Akira Tanaka | July 1, 2024 | Wagashi, Japanese Culture</div>
+                <img src="/api/placeholder/800/600" alt="An assortment of seasonal wagashi on a rustic wooden plate" class="post-image" />
+                <div class="post-content">
+                    <p>In the world of Japanese confectionery, few creations embody the principles of wabi-sabi — the appreciation of imperfection and impermanence — quite like wagashi. These traditional sweets, often served alongside matcha in tea ceremonies, are more than mere confections; they are edible manifestations of Japan's deep-rooted aesthetic philosophy.</p>
+                    
+                    <p>Wagashi, which literally translates to "Japanese confections," have a history spanning over a thousand years. Their evolution is intimately tied to the development of the Japanese tea ceremony, a ritual that places equal emphasis on the visual and gustatory experiences of its participants.</p>
+                    
+                    <p>What sets wagashi apart from other confections is their meticulous craftsmanship and their profound connection to nature and the changing seasons. Each piece is a miniature work of art, often reflecting the flora, fauna, or landscapes associated with a particular time of year. A spring wagashi might take the form of a delicate cherry blossom, while an autumn sweet could resemble a vibrant maple leaf.</p>
+                    
+                    <p>The ingredients used in wagashi are deceptively simple, primarily consisting of plant-based components such as mochi (pounded rice), anko (sweet red bean paste), and kanten (agar). Yet, in the hands of skilled artisans, these humble ingredients are transformed into exquisite creations that engage all the senses.</p>
+                    
+                    <p>The ephemeral nature of wagashi is perhaps their most poignant attribute. Unlike Western confections designed for longevity, wagashi are meant to be enjoyed in the moment. Their delicate structures and subtle flavors are a reminder of life's transience, encouraging the consumer to be fully present in the act of appreciation.</p>
+                    
+                    <p>As Japan continues to navigate the balance between tradition and modernity, wagashi remain a steadfast emblem of the nation's cultural heritage. They serve not only as a sweet treat but as a meditative experience, a moment of reflection amidst the chaos of contemporary life.</p>
+                    
+                    <p>For those outside of Japan, encountering wagashi for the first time can be a revelation. These aren't just desserts; they're an introduction to a different way of perceiving food, art, and the passage of time. In every bite of wagashi, one tastes not just sugar and bean paste, but centuries of tradition, a reverence for nature, and the bittersweet beauty of impermanence.</p>
+                </div>
+            </article>
+            <div class="post-navigation">
+                <a href="#" class="previous-post">Previous Post</a>
+                <a href="#" class="next-post">Next Post</a>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Search</h3>
+                <form class="search-form">
+                    <input type="text" placeholder="Search...">
+                </form>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">Popular Tags</h3>
+                <div class="tags">
+                    <a href="#" class="tag">Wagashi</a>
+                    <a href="#" class="tag">Tea Ceremony</a>
+                    <a href="#" class="tag">Seasonal Sweets</a>
+                    <a href="#" class="tag">Artisanal Crafts</a>
+                    <a href="#" class="tag">Japanese Culture</a>
+                </div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">Archives</h3>
+                <div class="archives-grid">
+                    <div class="archive-card">
+                        <a href="#">
+                            <div class="archive-month">July</div>
+                            <div class="archive-year">2024</div>
+                        </a>
+                    </div>
+                    <div class="archive-card">
+                        <a href="#">
+                            <div class="archive-month">June</div>
+                            <div class="archive-year">2024</div>
+                        </a>
+                    </div>
+                    <div class="archive-card">
+                        <a href="#">
+                            <div class="archive-month">May</div>
+                            <div class="archive-year">2024</div>
+                        </a>
+                    </div>
+                    <div class="archive-card">
+                        <a href="#">
+                            <div class="archive-month">April</div>
+                            <div class="archive-year">2024</div>
+                        </a>
+                    </div>
+                    <div class="archive-card">
+                        <a href="#">
+                            <div class="archive-month">March</div>
+                            <div class="archive-year">2024</div>
+                        </a>
+                    </div>
+                    <div class="archive-card">
+                        <a href="#">
+                            <div class="archive-month">February</div>
+                            <div class="archive-year">2024</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dejima. Exploring the Art of Wagashi.</p>
+        </div>
+    </footer>
+</body>
+</html>
