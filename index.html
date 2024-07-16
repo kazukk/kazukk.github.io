@@ -94,6 +94,19 @@
             color: #333;
             text-decoration: none;
         }
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+        .menu a:hover {
+            color: #ff6b6b;
+        }
         /* Hero Section */
         .hero {
             background-image: url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f');
@@ -194,6 +207,9 @@
     <header>
         <nav class="container">
             <a href="#" class="logo">Dejima</a>
+            <div class="menu">
+                <a href="https://blog.dejima.store" target="_blank">Blog</a>
+            </div>
         </nav>
     </header>
 
